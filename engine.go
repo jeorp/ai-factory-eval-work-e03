@@ -1,5 +1,5 @@
 package fixture
-import "errors"
+
 type Change struct { Action string; Content string }
 func Apply(original string, exists bool, prev *Change, next string) (Change,error) {
 	if !exists {
